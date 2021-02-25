@@ -52,6 +52,8 @@ void Queue::dequeueFront() {
 
 	temp->setNext(nullptr);
 	delete temp;
+
+	m_size--;
 }
 
 void Queue::dequeueBack() {
@@ -72,6 +74,8 @@ void Queue::dequeueBack() {
 
 	temp->setPrevious(nullptr);
 	delete temp; 
+
+	m_size--;
 }
 
 void Queue::enqueueFront(int data) {
